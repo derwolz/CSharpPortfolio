@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+         document.body.className += ' fade-out';
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+</script>
+
+<br>
+<br>
+
+<div onclick="closeForm()">
+    <div id="Home">
+
+        <br><br>
+        
+        
+        
+    </div>
+    <div class="bg-text vw-100">
+        <h1 style="color: white;">Blaine Wolz's Portfolio</h1>
+        <p>
+            <center>
+                <q>Inspirational quotes for inspirational people</q>
+                <br>--Anonomyous<br>
+                <br>
+                <br>
+                <br>
+            </center>
+        </p>
+        
+    </div>
+    <br>
+
+
+    <!--SlideShow-->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <div class="mySlides fader">
+                    <div class="Slide_Number">1/6</div>
+                    <img clas="Slide_Show_Images" src="~/Images/slideshow/two_ducks.jpeg" style="width:100%" alt="Two ducks">
+                    <div class="text">This is two ducks</div>
+                </div>
+
+                <div class="mySlides fader">
+                    <div class="Slide_Number">2/6</div>
+                    <img clas="Slide_Show_Images" src="~/Images/slideshow/Duck ducklings.jpeg" style="width:100%" alt="Two ducks">
+                    <div class="text">Duck walking ducklings</div>
+                </div>
+
+                <div class="mySlides fader">
+                    <div class="Slide_Number">3/6</div>
+                    <img class="Slide_Show_Images" src="~/Images/slideshow/Ducks.jpeg" style="width:100%" alt="Two ducks">
+                    <div class="text">Ducks waddling around</div>
+                </div>
+
+                <div class="mySlides fader">
+                    <div class="Slide_Number">4/6</div>
+                    <img clas="Slide_Show_Images" src="~/Images/slideshow/dead_duck.jpg" style="width:100%" alt="Two ducks">
+                    <div class="text">this is also a duck</div>
+                </div>
+
+                <div class="mySlides fader">
+                    <div class="Slide_Number">5/6</div>
+                    <img clas="Slide_Show_Images" src="~/Images/slideshow/Rubber_Duck.jpeg" style="width:100%" alt="Two ducks">
+                    <div class="text">This is a rubber duck</div>
+                </div>
+                <div class="mySlides fader">
+                    <div class="Slide_Number">6/6</div>
+                    <img clas="Slide_Show_Images" src="~/Images/slideshow/dead_rubber_duck.jpg" style="width:100%" alt="Two ducks">
+                    <div class="text">This rubber duck is dead</div>
+                </div>
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div><br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--GitHub Section-->
+    <div class="row" id="GitHub">
+
+        <div class="column_2">
+            <h3>Github</h3>
+
+            <p>
+                Now Programming in <br>
+                HTML5 <br>
+                CSS 3 <br>
+                Javascript <br>
+                SQL <br />
+                C# and the .net Framework
+            </p>
+            <br>
+            <a class="center" href="https://github.com/derwolz">My Github account</a>
+
+
+        </div>
+        <div class="column_1">
+            <div class="container-small">
+                <a href="https://github.com/derwolz">
+
+                    <img src="~/Images/Github.jpg" alt="gitlogo" id="Github">
+
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Contact section-->
+<div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/info@learncodinganywhere.com"  method="POST" class="form-container">
+            <h1>Contact</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="Name" name="Name" required placeholder="Please provide your name">
+            <label for="emali">Email:</label>
+            <input type="text" id="Email" name="Email" required placeholder="Write your email address here">
+
+            <label for="email">Phone Number:</label>
+            <input type="text" id="Phone" name="Phone" placeholder="(000)-000-0000">
+            <label for="message">Message:</label>
+            <input type="text" id="Message" name="Message" placeholder="Write your message here">
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+
+        </form>
+    </div>
+</div>
+<script>
+    $("#slideshow > div:gt(0)").hide();
+    setInterval(function () {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000)
+</script>
