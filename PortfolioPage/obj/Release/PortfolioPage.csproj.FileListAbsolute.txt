@@ -75,3 +75,4 @@ C:\Users\Dr Sam Hyde\source\repos\PortfolioPage\PortfolioPage\bin\Microsoft.Code
 C:\Users\Dr Sam Hyde\source\repos\PortfolioPage\PortfolioPage\obj\Release\PortfolioPage.csproj.CopyComplete
 C:\Users\Dr Sam Hyde\source\repos\PortfolioPage\PortfolioPage\obj\Release\PortfolioPage.dll
 C:\Users\Dr Sam Hyde\source\repos\PortfolioPage\PortfolioPage\obj\Release\PortfolioPage.pdb
+C:\Users\Dr Sam Hyde\source\repos\PortfolioPage\PortfolioPage\obj\Release\PortfolioPage.csprojAssemblyReference.cache
