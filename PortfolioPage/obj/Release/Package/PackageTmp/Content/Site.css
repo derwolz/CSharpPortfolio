@@ -396,7 +396,6 @@ footer {
     background-color: midnightblue;
 }
 
-
 @keyframes grayscale {
     0% {
         filter: grayscale(95%);
@@ -408,7 +407,6 @@ footer {
         transform: scale(1.1);
     }
 }
-
 
 /* Contact form Styling */
 @keyframes movePopup {
@@ -432,6 +430,7 @@ footer {
     position: fixed;
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
+    z-index:1;
 }
 
 .form-popup {
@@ -472,7 +471,7 @@ footer {
         border-color: gray;
     }
 
-button {
+.button-form {
     font-family: "Trebuchet MS", Optima;
     letter-spacing: .3vw;
     font-size: 1.5vw;
@@ -498,4 +497,12 @@ button {
     overflow: hidden;
     width: 100%;
 
+}
+
+.footer {
+    position: relative;
+    margin-top: -5em; /* negative value of footer height */
+    height: 5rem;
+    clear: both;
+    padding-top: 1em;
 }

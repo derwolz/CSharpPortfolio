@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
@@ -13,10 +11,8 @@ namespace PortfolioPage.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Projects()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
@@ -26,6 +22,15 @@ namespace PortfolioPage.Controllers
 
             return View();
         }
+        public PartialViewResult _Tictactoe()
+        {
+            return PartialView("_Tictactoe");
+        }
+        public PartialViewResult _ContactForm()
+        {
+            return PartialView("_ContactForm");
+        }
+        
         
     }
 }

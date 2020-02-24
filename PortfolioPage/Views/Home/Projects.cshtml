@@ -1,0 +1,72 @@
+﻿@{ 
+    ViewBag.Title = "Projects";
+}
+
+
+<br /><br />
+<h1>Project Portfolio</h1>
+<div class="container">
+    <div class="row ph-50 my-5">
+        <span class="col col-1"></span>
+        <div class="card col col-4 h-auto bg-dark ph-50">
+            <a href="https://github.com/derwolz/SuperNatural/">
+                <img src="~/wwwroot/images/RedMoon.jfif" alt="Red Moon trees" class=" card-img-top" />
+            </a>
+        </div>
+        <div class="card col col-6 bg-dark h-auto ph-50">
+            <a href="https://github.com/derwolz/SuperNatural/">
+                <div class="card-header">
+                    <h3>Supernatural</h3>
+                </div>
+                <div class="card-body text-danger text-center">
+                    Play as a hunter trying to protect a town from mysterious monsters
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row ph-50 my-5">
+        <span class="col col-1"></span>
+        <div class="card col col-4 h-auto bg-dark ph-50">
+            <a href="https://github.com/derwolz/Excel-Reader/">
+                <img src="~/wwwroot/images/ExcelSheet.jpg" alt="SpreadSheet" class=" card-img-top" />
+            </a>
+        </div>
+        <div class="card col  col-6 bg-dark h-auto ph-50">
+            <a href="https://github.com/derwolz/Excel-Reader/">
+                <div class="card-header">
+                    <h3>Excel ➞ dB</h3>
+                </div>
+                <div class="card-body text-danger text-center">
+                    Converts a basic Excel file to a code first database
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="row ph-50 my-5">
+        <span class="col col-1"></span>
+        <div class="card col col-4 h-auto bg-dark ph-50">
+            <a href="https://github.com/derwolz/BlackJack/">
+                <img src="~/wwwroot/images/playing-cards.jpg" alt="casino cards" class=" card-img-top" />
+            </a>
+        </div>
+        <div class="card col  col-6 bg-dark h-auto ph-50">
+            <a href="https://github.com/derwolz/BlackJack/">
+                <div class="card-header">
+                    <h3>BlackJack</h3>
+                </div>
+                <div class="card-body text-danger text-center">
+                    Basic Blackjack game you vs. the dealer
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+@{
+    Html.RenderAction("_Tictactoe", "Home");
+}
+
+

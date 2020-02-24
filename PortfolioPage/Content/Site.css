@@ -9,6 +9,7 @@ body {
     letter-spacing: .2vw;
     font-family: Helvetica;
     font-size: 1.5vw;
+    width:100%;
 }
 
     body.fade-out {
@@ -29,16 +30,17 @@ body {
     animation: moveNav 5s;
 }
 
-    
+
 .nav {
-    color: blue;
+    padding-left: 2em;
+    height: 2vw;
+    color: orange;
     text-align: center;
     position: fixed;
-
 }
 .nav-bg {
     width: 100%;
-    height: 1vw;
+    height: 2.5vw;
     padding-bottom: 2vw;
     background-color: midnightblue;
     align-content: center;
@@ -48,25 +50,28 @@ body {
 
 .nav li {
     padding-left: 1vw;
-    
+    border: .1vw solid black;
+    background-color: darkblue;
 }
    
     .nav li:hover a:hover {
         color: lightblue;
     }
-    .nav li:hover a:hover {
+    .nav li:hover  {
         background-color: blue;
-        text-decoration: underline; 
         cursor: pointer;
         color: lightblue;
         border-radius: 2px 2px;
         overflow: hidden;
-        
     }
+.nav a:hover {
+    text-decoration: underline;
+}
     ul {
         list-style-type: none;
         margin:0;
         padding:0;
+        text-align: center;
     }
 
 .mySlides {
@@ -231,7 +236,6 @@ body {
 }
 
 .container-small {
-    width: 30vw;
     height: 30vw;
     overflow: hidden;
 }
@@ -243,7 +247,7 @@ body {
     bottom: 0;
     min-width: 100%;
     width: 100%;
-    max-width: 600px;
+    height:100%;
     z-index: -1;
 }
 
@@ -267,8 +271,8 @@ body {
 
 #slideshow {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 50em;
+    height: 50em;
     overflow: hidden;
     margin-bottom: 50px;
 }
@@ -283,29 +287,29 @@ body {
 /* Column support*/
 .column_1 {
     float: left;
-    width: 50%;
-    padding-left: 10vw;
+    padding-left: 1vw;
     padding-top: 3%;
     padding-bottom: 33vw;
-    height: 430px;
+    height: 10vw;
     background-color: #2a0073;
-    margin: auto auto auto auto;
 }
 
 .column_2 {
     float: left;
-    width: 50%;
-    padding: 10px;
+    padding: 1vw;
     padding-top: 3%;
     padding-bottom: 33vw;
-    height: 430px;
+    height: 10vw;
     background-color: #080623;
     text-align: center;
 }
 
-.Row:after {
+.row:after {
     display: table;
     clear: both;
+}
+.row {
+    margin-bottom:4em;
 }
 
 /*--------------------------- text elements -------------------------------*/
@@ -323,6 +327,8 @@ h3 {
     text-align: center;
     margin-top: 5%;
     color: lightblue;
+    font-size: 2.7vw;
+    letter-spacing: .5vw
 }
 
 p {
@@ -332,10 +338,10 @@ p {
 }
 
 a {
-    color: blue;
+    color: orange;
 }
     a:hover {
-        text-decoration-style: none !important;
+        text-decoration-style: none ;
     }
 
 q {
@@ -392,10 +398,8 @@ form {
 }
 
 footer {
-    padding: 2%;
     background-color: midnightblue;
 }
-
 
 @keyframes grayscale {
     0% {
@@ -408,7 +412,6 @@ footer {
         transform: scale(1.1);
     }
 }
-
 
 /* Contact form Styling */
 @keyframes movePopup {
@@ -432,6 +435,7 @@ footer {
     position: fixed;
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
+    z-index:1;
 }
 
 .form-popup {
@@ -472,7 +476,7 @@ footer {
         border-color: gray;
     }
 
-button {
+.button-form {
     font-family: "Trebuchet MS", Optima;
     letter-spacing: .3vw;
     font-size: 1.5vw;
@@ -497,5 +501,16 @@ button {
     height: 200px;
     overflow: hidden;
     width: 100%;
-
 }
+
+.footer {
+    position: relative;
+    margin-top: -4.2em; /* negative value of footer height */
+    width: 98%;
+    margin-left: 1%;
+    height: 5rem;
+    clear: both;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+

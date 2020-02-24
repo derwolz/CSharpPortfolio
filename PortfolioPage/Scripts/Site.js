@@ -23,9 +23,9 @@ function showSlides(n) {
 }
 
 function openForm() {
-    document.getElementById('myForm').style.display = "block";
+    document.getElementById('contactForm').style.display = "block";
 }
 function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+    document.getElementById("contactForm").style.display = "none";
 }
 

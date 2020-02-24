@@ -1,8 +1,5 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿
+
 
 <p>This area Currently contains information valueable to any individual looking to Hire me</p>
 <p>Just check out my many great works listed here</p>
@@ -13,7 +10,7 @@
         <span class="col col-1"></span>
         <div class="card col col-4 h-auto bg-dark ph-50">
             <a href="https://github.com/derwolz/SuperNatural/">
-                <img src="~/Images/RedMoon.jfif" alt="Red Moon trees" class=" card-img-top" />
+                <img src="~/wwwroot/images/RedMoon.jfif" alt="Red Moon trees" class=" card-img-top" />
             </a>
         </div>
         <div class="card col  col-6 bg-dark h-auto ph-50">
@@ -32,7 +29,7 @@
         <span class="col col-1"></span>
         <div class="card col col-4 h-auto bg-dark ph-50">
             <a href="https://github.com/derwolz/Excel-Reader/">
-                <img src="~/Images/ExcelSheet.jpg" alt="SpreadSheet" class=" card-img-top" />
+                <img src="~/wwwroot/images/ExcelSheet.jpg" alt="SpreadSheet" class=" card-img-top" />
             </a>
         </div>
         <div class="card col  col-6 bg-dark h-auto ph-50">
@@ -45,13 +42,13 @@
                 </div>
             </a>
         </div>
-    
-</div>
+
+    </div>
     <div class="row ph-50 my-5">
         <span class="col col-1"></span>
         <div class="card col col-4 h-auto bg-dark ph-50">
             <a href="https://github.com/derwolz/BlackJack/">
-                <img src="~/Images/Playing-cards.jpg" alt="casino cards" class=" card-img-top" />
+                <img src="~/wwwroot/images/playing-cards.jpg" alt="casino cards" class=" card-img-top" />
             </a>
         </div>
         <div class="card col  col-6 bg-dark h-auto ph-50">
@@ -66,3 +63,8 @@
         </div>
     </div>
 </div>
+
+
+@Html.Action("Tictactoe")
+  
+
